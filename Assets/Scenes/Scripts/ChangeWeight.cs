@@ -1,23 +1,15 @@
 using UnityEngine;
 
 public class ChangeWeight : MonoBehaviour
-
 {
-    public Mesh currentmesh;
-    public int weight;
-    public Mesh BodyS, BodyM, BodyL;
-    public MeshFilter rend;
-
-  
-
-
+    public static int weight;
+    public GameObject BodyS, BodyM, BodyL;
 
     public void Start()
     {
-        currentmesh = BodyS;
-        rend = GetComponent<MeshFilter>();
-      
-        rend.mesh = BodyS;
+        BodyM.SetActive(false);
+        BodyL.SetActive(false);
+        BodyS.SetActive(true);
     }
 
    public void WeightPlus()
@@ -25,17 +17,17 @@ public class ChangeWeight : MonoBehaviour
         weight++;
         if (weight ==1)
         {
-            rend.mesh = BodyM;
-            Debug.Log("Entrato");
-            currentmesh = BodyM;
+            BodyM.SetActive(true);
+            BodyL.SetActive(false);
+            BodyS.SetActive(false);
         }
 
         else if (weight ==2)
         {
-
-            rend.mesh = BodyL;
-            Debug.Log("Entrato2");
-            currentmesh = BodyL;
+            BodyM.SetActive(false);
+            BodyL.SetActive(true);
+            BodyS.SetActive(false);
+   
         }
 
         else if (weight >= 3)
@@ -49,17 +41,16 @@ public class ChangeWeight : MonoBehaviour
         weight--;
         if (weight == 0)
         {
-            rend.mesh = BodyS;
-            Debug.Log("Entrato");
-            currentmesh = BodyS;
+            BodyM.SetActive(false);
+            BodyL.SetActive(false);
+            BodyS.SetActive(true);
         }
 
         else if (weight == 1)
         {
-
-            rend.mesh = BodyM;
-            Debug.Log("Entrato2");
-            currentmesh = BodyM;
+            BodyM.SetActive(true);
+            BodyL.SetActive(false);
+            BodyS.SetActive(false);
         }
 
         else if (weight <=-1)
