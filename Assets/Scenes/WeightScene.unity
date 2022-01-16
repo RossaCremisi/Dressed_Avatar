@@ -365,7 +365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493060838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38, y: -99, z: 22}
+  m_LocalPosition: {x: 38, y: -94.5, z: 22}
   m_LocalScale: {x: 798.9952, y: 193.25377, z: 188.76622}
   m_Children: []
   m_Father: {fileID: 0}
@@ -867,6 +867,7 @@ GameObject:
   - component: {fileID: 1016658711}
   - component: {fileID: 1016658710}
   - component: {fileID: 1016658714}
+  - component: {fileID: 1016658715}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -974,6 +975,18 @@ MonoBehaviour:
   - {fileID: 435752549}
   - {fileID: 543263269}
   - {fileID: 240455293}
+--- !u!114 &1016658715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016658709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8c2bc55da70914fa694dc8fbd83443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1141659057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,16 +1070,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TestScript, Assembly-CSharp
-        m_MethodName: GoToScene
+      - m_Target: {fileID: 1016658715}
+        m_TargetAssemblyTypeName: PlayScene, Assembly-CSharp
+        m_MethodName: PlayGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestScene
+          m_StringArgument: PoseScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1141659060
