@@ -11,27 +11,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bodymat
-    second: {fileID: 7251930586503330198, guid: dfbdc3dfb99d2bf458b83f80975e0ffe, type: 3}
+    second: {fileID: 2100000, guid: 4eb9e6458c65f724cbe83a794202674d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bottommat
-    second: {fileID: -9201458815353752512, guid: 765468d96f47bf64088683b040777879, type: 3}
+    second: {fileID: 2100000, guid: baa3baf60339e8f4eb5417afe285e5d1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hairmat
-    second: {fileID: 5034503658039481243, guid: 65c82a972d035914c89cb706d9df6066, type: 3}
+    second: {fileID: 2100000, guid: 27f6b95de9a305641a51021ccbe1f0a7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shoesmat
-    second: {fileID: 7251930586503330198, guid: dfbdc3dfb99d2bf458b83f80975e0ffe, type: 3}
+    second: {fileID: 2100000, guid: b0f5e0f529874b14ba21a1af27fc9417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Topmat
-    second: {fileID: 7251930586503330198, guid: dfbdc3dfb99d2bf458b83f80975e0ffe, type: 3}
+    second: {fileID: 2100000, guid: 51320686e2a0ecb40ba61eebfb0c6108, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
