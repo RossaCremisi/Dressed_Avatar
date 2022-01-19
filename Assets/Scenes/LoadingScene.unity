@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -381,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 686
+      value: 495
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -422,6 +422,22 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
       propertyPath: m_Name
       value: Poncho
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042023225869285003, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042023225869285003, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042023225869285003, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042023225869285003, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -3901992563441801604, guid: 79756455fd835ba4f82d88fa3dc0292e, type: 3}
