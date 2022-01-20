@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class TimerLoading : MonoBehaviour
 {
     [SerializeField]
-    private float delayScene = 20f;
+    public float delayScene = 20f;
     [SerializeField]
     private string sceneNameToLoad;
 
