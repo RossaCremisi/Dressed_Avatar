@@ -10,6 +10,15 @@ public class PlayScene : MonoBehaviour
     public Cloth poncho;
     public Button[] buttonsToDeactivate;
     public GameObject rotateManager;
+
+    GameObject BodyS, BodyM, BodyL;
+
+    public GameObject[] meshWeight;
+
+    public void Start()
+    {
+      
+    }
     public void PlayGame(string sceneToLoad)
     {
         SceneManager.LoadScene(sceneToLoad);
@@ -23,18 +32,25 @@ public class PlayScene : MonoBehaviour
     {
         StartCoroutine(LoadPoseScene());
     }
+
+    public void ReturnButton()
+    {
+        SceneManager.LoadScene("Welcome");
+    }
     IEnumerator LoadPoseScene()
     {
         rotateManager.transform.rotation = new Quaternion(0, 0, 0, 0);
         poncho.useGravity = true;
         poncho.externalAcceleration = new Vector3(0, -50, 0);
         poncho.randomAcceleration = new Vector3(0, -20, 0);
+
         anims[ChangeWeight.weight].SetBool("Walking", false);
         foreach (Button button in buttonsToDeactivate)
         {
-            button.interactable = false;
+            // button.interactable = false;
         }
         yield return new WaitForSeconds(12f);
-        SceneManager.LoadScene("PoseScene");
+        //SceneManager.LoadScene("PoseScene");
+    
     }
 }

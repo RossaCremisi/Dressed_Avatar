@@ -9,20 +9,26 @@ public class BodyPoseManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         for (int i = 0; i < meshWeight.Length; i++)
         {
             if (i==ChangeWeight.weight)
             {
-                meshWeight[i].SetActive(true);
+                meshWeight[i].SetActive(false);
             }
             else
             {
-                meshWeight[i].SetActive(false);
+                meshWeight[i].SetActive(true);
             }
         }
     }
-    public void PlayPose(string AnimName)
-    {
-        anims[ChangeWeight.weight].SetBool(AnimName, true);
-    }
+
+  
+    
+        public void PlayPose(string AnimName)
+        {
+            anims[ChangeWeight.weight].SetBool(AnimName, true);
+        }
+    
+  
 }

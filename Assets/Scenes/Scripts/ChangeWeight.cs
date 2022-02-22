@@ -4,9 +4,14 @@ public class ChangeWeight : MonoBehaviour
 {
     public static int weight;
     public GameObject BodyS, BodyM, BodyL;
+    public GameObject[] meshWeight;
+    public Animator[] anims;
+
 
     public void Start()
     {
+
+      
         BodyM.SetActive(false);
         BodyL.SetActive(false);
         BodyS.SetActive(true);
@@ -34,6 +39,9 @@ public class ChangeWeight : MonoBehaviour
         {
             weight = 2;
         }
+
+
+       
     }
 
     public void WeightMinus()
@@ -57,9 +65,16 @@ public class ChangeWeight : MonoBehaviour
         {
             weight = 0;
         }
+
+       
+
     }
 
-    
+    public void PlayPose(string AnimName)
+    {
+       
+        anims[ChangeWeight.weight].SetBool(AnimName, true);
+    }
 }
 
 
